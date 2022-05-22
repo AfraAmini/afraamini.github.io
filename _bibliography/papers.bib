@@ -1,72 +1,34 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@inproceedings{meister-etal-2021-conditional,
+    title = {Conditional {P}oisson Stochastic Beams},
+    author = "Meister, Clara  and
+      Amini, Afra  and
+      Vieira, Tim  and
+      Cotterell, Ryan",
+    abbr={EMNLP 2021},
+    booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+    year = {2021},
+    address = {Online and Punta Cana, Dominican Republic},
+    publisher = {Association for Computational Linguistics},
+    pdf = {https://aclanthology.org/2021.emnlp-main.52.pdf},
+    acl = {https://aclanthology.org/2021.emnlp-main.52},
+    arxiv = {2109.11034},
+    doi = {10.18653/v1/2021.emnlp-main.52},
+    pages = {664--681},
+    selected=true,
+    abstract = {Beam search is the default decoding strategy for many sequence generation tasks in NLP. The set of approximate K-best items returned by the algorithm is a useful summary of the distribution for many applications; however, the candidates typically exhibit high overlap and may give a highly biased estimate for expectations under our model. These problems can be addressed by instead using stochastic decoding strategies. In this work, we propose a new method for turning beam search into a stochastic process: Conditional Poisson stochastic beam search. Rather than taking the maximizing set at each iteration, we sample K candidates without replacement according to the conditional Poisson sampling design. We view this as a more natural alternative to Kool et al. (2019){'}s stochastic beam search (SBS). Furthermore, we show how samples generated under the CPSBS design can be used to build consistent estimators and sample diverse sets from sequence models. In our experiments, we observe CPSBS produces lower variance and more efficient estimators than SBS, even showing improvements in high entropy settings.},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{amini2022naturalistic,
+  title={Naturalistic Causal Probing for Morpho-Syntax},
+  abbr={TACL 2022},
+  author={Amini, Afra and Pimentel, Tiago and Meister, Clara and Cotterell, Ryan},
+  journal={Transactions of the Association for Computational Linguistics},
+  pdf={https://arxiv.org/pdf/2205.07043.pdf},
+  arxiv={2205.07043},
+  selected=true,
+  year={2022},
+  abstract = {Probing has become a go-to methodology for interpreting and analyzing deep neural models in natural language processing. Yet recently, there has been much debate around the limitations and weaknesses of probes. In this work, we suggest a naturalistic strategy for input-level intervention on real world data in Spanish, which is a language with gender marking. Using our approach, we isolate morpho-syntactic features from counfounders in sentences, e.g. topic, which will then allow us to causally probe pre-trained models. We apply this methodology to analyze causal effects of gender and number on contextualized representations extracted from pre-trained models -- BERT, RoBERTa and GPT-2. Our experiments suggest that naturalistic intervention can give us stable estimates of causal effects, which varies across different words in a sentence. We further show the utility of our estimator in investigating gender bias in adjectives, and answering counterfactual questions in masked prediction. Our probing experiments highlights the importance of conducting causal probing in determining if a particular property is encoded in representations.},
 }
