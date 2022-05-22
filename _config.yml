@@ -56,7 +56,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: AfraAmini # your GitHub user name
-gitlab_username: aamini # your GitLab user name
+gitlab_username: # your GitLab user name
 twitter_username: afra_amini # your Twitter handle
 linkedin_username: afraamini # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
