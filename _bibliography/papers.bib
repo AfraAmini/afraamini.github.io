@@ -1,6 +1,33 @@
 ---
 ---
 
+@inproceedings{amini-etal-2022-pat,
+    title = {On Parsing as Tagging},
+    author = "Amini, Afra  and
+      Cotterell, Ryan",
+    abbr={EMNLP 2022},
+    booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+    year = {2022},
+    address = {Online and Punta Cana, Dominican Republic},
+    publisher = {Association for Computational Linguistics},
+    pdf = {https://arxiv.org/pdf/2211.07344.pdf},
+    arxiv = {2211.07344},
+    selected=true,
+    abstract = {There have been many proposals to reduce constituency parsing to tagging in the literature. To better understand what these approaches have in common, we cast several existing proposals into a unifying pipeline consisting of three steps: linearization, learning, and decoding. In particular, we show how to reduce tetratagging, a state-of-the-art constituency tagger, to shift--reduce parsing by performing a right-corner transformation on the grammar and making a specific independence assumption. Furthermore, we empirically evaluate our taxonomy of tagging pipelines with different choices of linearizers, learners, and decoders. Based on the results in English and a set of 8 typologically diverse languages, we conclude that the linearization of the derivation tree and its alignment with the input sequence is the most critical factor in achieving accurate taggers.},
+}
+
+@article{amini2022naturalistic,
+  title={Naturalistic Causal Probing for Morpho-Syntax},
+  abbr={TACL 2022},
+  author={Amini, Afra and Pimentel, Tiago and Meister, Clara and Cotterell, Ryan},
+  journal={Transactions of the Association for Computational Linguistics},
+  pdf={https://arxiv.org/pdf/2205.07043.pdf},
+  arxiv={2205.07043},
+  selected=true,
+  year={2022},
+  abstract = {Probing has become a go-to methodology for interpreting and analyzing deep neural models in natural language processing. Yet recently, there has been much debate around the limitations and weaknesses of probes. In this work, we suggest a naturalistic strategy for input-level intervention on real world data in Spanish, which is a language with gender marking. Using our approach, we isolate morpho-syntactic features from counfounders in sentences, e.g. topic, which will then allow us to causally probe pre-trained models. We apply this methodology to analyze causal effects of gender and number on contextualized representations extracted from pre-trained models -- BERT, RoBERTa and GPT-2. Our experiments suggest that naturalistic intervention can give us stable estimates of causal effects, which varies across different words in a sentence. We further show the utility of our estimator in investigating gender bias in adjectives, and answering counterfactual questions in masked prediction. Our probing experiments highlights the importance of conducting causal probing in determining if a particular property is encoded in representations.},
+}
+
 @inproceedings{meister-etal-2021-conditional,
     title = {Conditional {P}oisson Stochastic Beams},
     author = "Meister, Clara  and
@@ -19,16 +46,4 @@
     pages = {664--681},
     selected=true,
     abstract = {Beam search is the default decoding strategy for many sequence generation tasks in NLP. The set of approximate K-best items returned by the algorithm is a useful summary of the distribution for many applications; however, the candidates typically exhibit high overlap and may give a highly biased estimate for expectations under our model. These problems can be addressed by instead using stochastic decoding strategies. In this work, we propose a new method for turning beam search into a stochastic process: Conditional Poisson stochastic beam search. Rather than taking the maximizing set at each iteration, we sample K candidates without replacement according to the conditional Poisson sampling design. We view this as a more natural alternative to Kool et al. (2019){'}s stochastic beam search (SBS). Furthermore, we show how samples generated under the CPSBS design can be used to build consistent estimators and sample diverse sets from sequence models. In our experiments, we observe CPSBS produces lower variance and more efficient estimators than SBS, even showing improvements in high entropy settings.},
-}
-
-@article{amini2022naturalistic,
-  title={Naturalistic Causal Probing for Morpho-Syntax},
-  abbr={TACL 2022},
-  author={Amini, Afra and Pimentel, Tiago and Meister, Clara and Cotterell, Ryan},
-  journal={Transactions of the Association for Computational Linguistics},
-  pdf={https://arxiv.org/pdf/2205.07043.pdf},
-  arxiv={2205.07043},
-  selected=true,
-  year={2022},
-  abstract = {Probing has become a go-to methodology for interpreting and analyzing deep neural models in natural language processing. Yet recently, there has been much debate around the limitations and weaknesses of probes. In this work, we suggest a naturalistic strategy for input-level intervention on real world data in Spanish, which is a language with gender marking. Using our approach, we isolate morpho-syntactic features from counfounders in sentences, e.g. topic, which will then allow us to causally probe pre-trained models. We apply this methodology to analyze causal effects of gender and number on contextualized representations extracted from pre-trained models -- BERT, RoBERTa and GPT-2. Our experiments suggest that naturalistic intervention can give us stable estimates of causal effects, which varies across different words in a sentence. We further show the utility of our estimator in investigating gender bias in adjectives, and answering counterfactual questions in masked prediction. Our probing experiments highlights the importance of conducting causal probing in determining if a particular property is encoded in representations.},
 }
