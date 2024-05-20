@@ -1,5 +1,35 @@
 ---
 ---
+@inproceedings{odpo,
+      title={Direct Preference Optimization with an Offset},
+      author={Afra Amini and Tim Vieira and Ryan Cotterell},
+      year={2024},
+      abbr={ACL 2024},
+      selected=true,
+      booktitle = {Findings of the Association for Computational Linguistics: ACL 2024},
+      pdf = {https://arxiv.org/pdf/2402.10571},
+      abstract={Direct preference optimization (DPO) is a successful fine-tuning strategy for aligning large language models with human preferences without the need to train a reward model or employ reinforcement learning. DPO, as originally formulated, relies on binary preference data and fine-tunes a language model to increase the likelihood of a preferred response over a dispreferred response. However, not all preference pairs are equal: while in some cases the preferred response is only slightly better than the dispreferred response, there can be a stronger preference for one response when, for example, the other response includes harmful or toxic content. In this paper, we propose a generalization of DPO, termed DPO with an offset (ODPO), that does not treat every preference pair equally during fine-tuning. Intuitively, ODPO requires the difference between the likelihood of the preferred and dispreferred response to be greater than an offset value. The offset is determined based on the extent to which one response is preferred over another. Our experiments on various tasks suggest that ODPO significantly outperforms DPO in aligning language models, especially when the number of preference pairs is limited.}
+}
+@inproceedings{climate,
+      title={Assessing Large Language Models on Climate Information},
+      author={Jannis Bulian* and Mike S. Sch{\"a}fer* and Afra Amini* and Heidi Lam* and Massimiliano Ciaramita* and Ben Gaiarin* and Michelle Chen Huebscher* and Christian Buck* and Niels G. Mede* and Markus Leippold* and Nadine Strauss*},
+      year={2024},
+      abbr={ICML 2024},
+      selected=false,
+      booktitle = {International Conference on Machine Learning},
+      abstract={Understanding how climate change affects us and learning about available solutions are key steps toward empowering individuals and communities to mitigate and adapt to it. As Large Language Models (LLMs) rise in popularity, it is necessary to assess their capability in this domain. In this study, we present a comprehensive evaluation framework, grounded in science communication principles, to analyze LLM responses to climate change topics. Our framework emphasizes both the presentational and epistemological adequacy of answers, offering a fine-grained analysis of LLM generations. Spanning 8 dimensions, our framework discerns up to 30 distinct issues in model outputs. The task is a real-world example of a growing number of challenging problems where AI can complement and lift human performance. We introduce a novel and practical protocol for scalable oversight that uses AI Assistance and relies on raters with relevant educational backgrounds. We evaluate several recent LLMs and conduct a comprehensive analysis of the results, shedding light on both the potential and the limitations of LLMs in the realm of climate communication.}
+}
+
+@inproceedings{du2023principled,
+      title={Principled Gradient-based Markov Chain Monte Carlo for Text Generation},
+      author={Li Du and Afra Amini and Lucas Torroba Hennigen and Xinyan Velocity Yu and Jason Eisner and Holden Lee and Ryan Cotterell},
+      year={2024},
+      abbr={ICML 2024},
+      selected=true,
+      booktitle = {International Conference on Machine Learning},
+      pdf = {https://arxiv.org/pdf/2312.17710},
+      abstract={Recent papers have demonstrated the possibility of energy-based text generation by adapting gradient-based sampling algorithms, a paradigm of MCMC algorithms that promises fast convergence. However, as we show in this paper, previous attempts on this approach to text generation all fail to sample correctly from the target language model distributions. To address this limitation, we consider the problem of designing text samplers that are faithful, meaning that they have the target text distribution as its limiting distribution. We propose several faithful gradient-based sampling algorithms to sample from the target energy-based text distribution correctly, and study their theoretical properties. Through experiments on various forms of text generation, we demonstrate that faithful samplers are able to generate more fluent text while adhering to the control objectives better.}
+}
 @inproceedings{liu-etal-2023-linear,
       title={Linear-Time Modeling of Linguistic Structure: An Order-Theoretic Perspective},
       author={Tianyu Liu and Afra Amini and Mrinmaya Sachan and Ryan Cotterell},
@@ -42,7 +72,7 @@
       author={Robin Chan and Afra Amini and Mennatallah El-Assady},
       year={2023},
       abbr={ACL 2023},
-      selected=true,
+      selected=false,
       booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics: System Demonstrations},
       publisher = {Association for Computational Linguistics},
       pdf = {https://arxiv.org/pdf/2306.12146.pdf},
@@ -70,7 +100,7 @@
   journal={Transactions of the Association for Computational Linguistics},
   pdf={https://arxiv.org/pdf/2205.07043.pdf},
   arxiv={2205.07043},
-  selected=true,
+  selected=false,
   year={2022},
   abstract = {Probing has become a go-to methodology for interpreting and analyzing deep neural models in natural language processing. Yet recently, there has been much debate around the limitations and weaknesses of probes. In this work, we suggest a naturalistic strategy for input-level intervention on real world data in Spanish, which is a language with gender marking. Using our approach, we isolate morpho-syntactic features from counfounders in sentences, e.g. topic, which will then allow us to causally probe pre-trained models. We apply this methodology to analyze causal effects of gender and number on contextualized representations extracted from pre-trained models -- BERT, RoBERTa and GPT-2. Our experiments suggest that naturalistic intervention can give us stable estimates of causal effects, which varies across different words in a sentence. We further show the utility of our estimator in investigating gender bias in adjectives, and answering counterfactual questions in masked prediction. Our probing experiments highlights the importance of conducting causal probing in determining if a particular property is encoded in representations.},
 }
@@ -91,7 +121,7 @@
     arxiv = {2109.11034},
     doi = {10.18653/v1/2021.emnlp-main.52},
     pages = {664--681},
-    selected=true,
+    selected=false,
     abstract = {Beam search is the default decoding strategy for many sequence generation tasks in NLP. The set of approximate K-best items returned by the algorithm is a useful summary of the distribution for many applications; however, the candidates typically exhibit high overlap and may give a highly biased estimate for expectations under our model. These problems can be addressed by instead using stochastic decoding strategies. In this work, we propose a new method for turning beam search into a stochastic process: Conditional Poisson stochastic beam search. Rather than taking the maximizing set at each iteration, we sample K candidates without replacement according to the conditional Poisson sampling design. We view this as a more natural alternative to Kool et al. (2019){'}s stochastic beam search (SBS). Furthermore, we show how samples generated under the CPSBS design can be used to build consistent estimators and sample diverse sets from sequence models. In our experiments, we observe CPSBS produces lower variance and more efficient estimators than SBS, even showing improvements in high entropy settings.},
 }
 
