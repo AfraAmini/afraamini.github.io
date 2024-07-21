@@ -1,5 +1,16 @@
 ---
 ---
+@inproceedings{vbon,
+      title={Variational Best-of-N Alignment},
+      author={Afra Amini and Tim Vieira and Ryan Cotterell},
+      year={2024},
+      abbr={arXiv},
+      selected=true,
+      booktitle = {arXiv},
+      pdf = {https://arxiv.org/pdf/2407.06057v1},
+      abstract={Best-of-N (BoN) is a popular and effective algorithm for aligning language models to human preferences. The algorithm works as follows: at inference time, N samples are drawn from the language model, and the sample with the highest reward, as judged by a reward model, is returned as the output. Despite its effectiveness, BoN is computationally expensive; it reduces sampling throughput by a factor of N. To make BoN more efficient at inference time, one strategy is to fine-tune the language model to mimic what BoN does during inference. To achieve this, we derive the distribution induced by the BoN algorithm. We then propose to fine-tune the language model to minimize backward KL divergence to the BoN distribution. Our approach is analogous to mean-field variational inference and, thus, we term it variational BoN (vBoN). To the extent this fine-tuning is successful and we end up with a good approximation, we have reduced the inference cost by a factor of N. Our experiments on a controlled generation task suggest that while variational BoN is not as effective as BoN in aligning language models, it is close to BoN performance as vBoN appears more often on the Pareto frontier of reward and KL divergence compared to models trained with KL-constrained RL objective.}
+}
+
 @inproceedings{odpo,
       title={Direct Preference Optimization with an Offset},
       author={Afra Amini and Tim Vieira and Ryan Cotterell},
@@ -16,6 +27,7 @@
       year={2024},
       abbr={ICML 2024},
       selected=false,
+      pdf = {https://arxiv.org/pdf/2310.02932v2},
       booktitle = {International Conference on Machine Learning},
       abstract={Understanding how climate change affects us and learning about available solutions are key steps toward empowering individuals and communities to mitigate and adapt to it. As Large Language Models (LLMs) rise in popularity, it is necessary to assess their capability in this domain. In this study, we present a comprehensive evaluation framework, grounded in science communication principles, to analyze LLM responses to climate change topics. Our framework emphasizes both the presentational and epistemological adequacy of answers, offering a fine-grained analysis of LLM generations. Spanning 8 dimensions, our framework discerns up to 30 distinct issues in model outputs. The task is a real-world example of a growing number of challenging problems where AI can complement and lift human performance. We introduce a novel and practical protocol for scalable oversight that uses AI Assistance and relies on raters with relevant educational backgrounds. We evaluate several recent LLMs and conduct a comprehensive analysis of the results, shedding light on both the potential and the limitations of LLMs in the realm of climate communication.}
 }
