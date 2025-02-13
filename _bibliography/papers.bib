@@ -2,11 +2,11 @@
 ---
 @inproceedings{vbon,
       title={Variational Best-of-N Alignment},
-      author={Afra Amini and Tim Vieira and Ryan Cotterell},
-      year={2024},
-      abbr={arXiv},
+      author={Afra Amini and Tim Vieira and Elliott Ash and Ryan Cotterell},
+      year={2025},
+      abbr={ICLR 2025},
       selected=true,
-      booktitle = {arXiv},
+      booktitle = {International Conference on Learning Representations},
       pdf = {https://arxiv.org/pdf/2407.06057v1},
       abstract={Best-of-N (BoN) is a popular and effective algorithm for aligning language models to human preferences. The algorithm works as follows: at inference time, N samples are drawn from the language model, and the sample with the highest reward, as judged by a reward model, is returned as the output. Despite its effectiveness, BoN is computationally expensive; it reduces sampling throughput by a factor of N. To make BoN more efficient at inference time, one strategy is to fine-tune the language model to mimic what BoN does during inference. To achieve this, we derive the distribution induced by the BoN algorithm. We then propose to fine-tune the language model to minimize backward KL divergence to the BoN distribution. Our approach is analogous to mean-field variational inference and, thus, we term it variational BoN (vBoN). To the extent this fine-tuning is successful and we end up with a good approximation, we have reduced the inference cost by a factor of N. Our experiments on a controlled generation task suggest that while variational BoN is not as effective as BoN in aligning language models, it is close to BoN performance as vBoN appears more often on the Pareto frontier of reward and KL divergence compared to models trained with KL-constrained RL objective.}
 }
