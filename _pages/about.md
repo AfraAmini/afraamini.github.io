@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: 
 
-news: true  # includes a list of news items
+address:
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 Hi there! I am a doctoral student at [ETH AI Center](https://ai.ethz.ch/). I am supervised by Prof. [Ryan Cotterell](https://rycolab.io/authors/ryan/) and Prof. [Elliott Ash](https://elliottash.com/). I conduct research in natural language processing and machine learning. My goal is to understand biases of NLP models, and leverage this understanding to build more efficient and controllable systems.  
