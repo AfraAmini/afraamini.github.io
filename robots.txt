@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://afraamini.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://afraamini.github.io/sitemap.xml
