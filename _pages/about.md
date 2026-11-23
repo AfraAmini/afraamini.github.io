@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I’m a research scientist at [Google DeepMind](https://deepmind.google/), where I work on Gemini post-training.  
+Hi there! I’m a senior research scientist at [Google DeepMind](https://deepmind.google/), where I work on Gemini post-training.  
 
 I completed my Ph.D. at the [ETH AI Center](https://ai.ethz.ch/), under the primary supervision of [Prof. Ryan Cotterell](https://rycolab.io/authors/ryan/) and secondary supervision of [Prof. Elliott Ash](https://elliottash.com/).  
 My doctoral research focused on developing efficient and reliable methods for post-training language models, culminating in a thesis titled [*Methods for Language Model Alignment: Inference-Time Sampling and Preference Fine-Tuning.*](https://www.research-collection.ethz.ch/entities/publication/2fc971aa-d3de-4402-9603-97dd5ce114f9) 
